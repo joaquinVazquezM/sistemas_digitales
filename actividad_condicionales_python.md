@@ -27,8 +27,7 @@ Z = X and (Y or W)
 **Tema:** Estructuras condicionales (if, else, elif) y operadores lógicos  
 **Lenguaje:** Python 3  
 **Duración:** 90 minutos  
-**Nivel:** Básico-Intermedio  
-**Modalidad:** Individual con opción a discusión en parejas
+**Nivel:** Básico-Intermedio
 
 ---
 
@@ -121,7 +120,6 @@ y es falso
 
 1. ¿Qué pasa si cambias `x = False`? ¿Se ejecuta el primer `if`?
 2. ¿Por qué `not y == True` es verdadero si y = False?
-3. **Relación con compuertas:** ¿Qué compuerta lógica representa `not y`?
 
 ### **Tabla de verdad:**
 
@@ -233,7 +231,6 @@ visitante = False
 1. ¿Qué operador lógico se usa en la primera condición?
 2. ¿Qué compuerta lógica representa `estudiante or profesor`?
 3. Si una persona es estudiante Y profesor, ¿qué mensaje aparece?
-4. Dibuja el circuito lógico equivalente usando compuertas OR y AND
 
 ---
 
@@ -317,8 +314,6 @@ Modifica los valores y completa la tabla:
 
 1. ¿Qué operador lógico se utiliza? (AND / OR)
 2. ¿Qué pasa si UNA condición es falsa?
-3. **Compuerta equivalente:** Dibuja una compuerta AND con dos entradas
-4. **Mejora el código:** Agrega un límite mínimo de temperatura (ej: -10°C)
 
 ---
 
@@ -400,7 +395,6 @@ Completa ejecutando el programa con diferentes valores:
 
 1. ¿Cuándo es verdadero XOR?
 2. ¿En qué se diferencia XOR de OR normal?
-3. **Implementación alternativa:** Escribe XOR usando solo AND, OR y NOT
 4. **Aplicación real:** ¿Dónde se usa XOR en sistemas digitales? (pista: detectar cambios)
 
 ---
@@ -521,61 +515,6 @@ bajo_techo = False
 1. ¿Cuántos niveles de `if` anidados tiene el código?
 2. ¿Por qué usar XOR para evaluar `sombrilla` y `bajo_techo`?
 3. Dibuja un diagrama de flujo del proceso de decisión
-4. **Reto:** Agrega una variable `impermeable` como tercera opción de protección
-
----
-
-## 🎯 PARTE FINAL: Integración con Compuertas Lógicas
-
-### **Actividad de síntesis:**
-
-Para cada ejercicio, completa la siguiente tabla:
-
-```
-┌────────────┬───────────────────┬──────────────────┬─────────────────┐
-│ Ejercicio  │ Operador Usado    │ Compuerta        │ Símbolo         │
-│            │ (and/or/not/xor)  │ Equivalente      │ Lógico          │
-├────────────┼───────────────────┼──────────────────┼─────────────────┤
-│     1      │                   │                  │                 │
-│     2      │                   │                  │                 │
-│     3      │                   │                  │                 │
-│     4      │                   │                  │                 │
-│     5      │                   │                  │                 │
-└────────────┴───────────────────┴──────────────────┴─────────────────┘
-```
-
-### **Dibuja los circuitos:**
-
-Para los ejercicios 2, 3 y 4, dibuja el circuito lógico equivalente usando compuertas.
-
-**Ejemplo para Ejercicio 3:**
-
-```
-gasolina > min ────┐
-                   ├──[ AND ]──── movimiento
-temperatura < max ─┘
-```
-
----
-
-## 📊 Rúbrica de Evaluación
-
-### **Criterios de evaluación (100 puntos):**
-
-| Criterio | Excelente (20) | Bueno (15) | Regular (10) | Insuficiente (5) |
-|----------|----------------|------------|--------------|------------------|
-| **Ejecución de código** | Todos los 5 ejercicios funcionan sin errores | 4 ejercicios funcionan | 3 ejercicios funcionan | Menos de 3 funcionan |
-| **Casos de prueba** | Completa todas las tablas con valores correctos | Completa 80% de tablas | Completa 60% de tablas | Menos del 60% |
-| **Análisis y respuestas** | Responde todas las preguntas con profundidad | Responde todas superficialmente | Responde parcialmente | No responde o incorrecto |
-| **Relación con compuertas** | Identifica y dibuja todos los circuitos correctamente | Identifica pero dibuja parcialmente | Solo identifica sin dibujar | No relaciona con compuertas |
-| **Formato y documentación** | Código comentado, organizado, con salidas claras | Código organizado, pocos comentarios | Código funciona pero desorganizado | Código difícil de leer |
-
-### **Bonificaciones (+10 puntos cada una):**
-
-- ✨ **+10:** Crear un ejercicio adicional original con condicionales
-- ✨ **+10:** Implementar versión con entrada del usuario (`input()`)
-- ✨ **+10:** Crear diagrama de flujo para todos los ejercicios
-- ✨ **+10:** Video explicativo (2-3 min) de uno de los ejercicios
 
 ---
 
@@ -591,7 +530,6 @@ temperatura < max ─┘
 6. ✅ `respuestas.pdf` - Documento con:
    - Tablas de casos de prueba completadas
    - Respuestas a preguntas de análisis
-   - Diagramas de circuitos lógicos
    - Capturas de pantalla de ejecuciones
    - Tabla de integración con compuertas
 
@@ -627,14 +565,6 @@ print(f"DEBUG: x={x}, y={y}")
 print(f"DEBUG: Condición: {x and y}")
 ```
 
-### **Para probar:**
-
-- Crea una función `probar_casos()` que ejecute todos los escenarios
-- Usa comentarios para documentar cada caso
-- Anota resultados esperados vs obtenidos
-
----
-
 ## 🔗 Recursos Adicionales
 
 ### **Documentación:**
@@ -647,29 +577,6 @@ print(f"DEBUG: Condición: {x and y}")
 
 - [Python Tutor](http://pythontutor.com) - Visualiza ejecución paso a paso
 - [Repl.it](https://replit.com) - IDE online para Python
-- [Logic.ly](https://logic.ly) - Simulador de compuertas lógicas
-
-### **Videos recomendados:**
-
-- "Python If Statements" - Corey Schafer
-- "Boolean Logic" - Computerphile
-- "Logic Gates" - Khan Academy
-
----
-
-## ⏰ Cronograma Sugerido (90 minutos)
-
-```
-Minutos 0-10:   Lectura de instrucciones y setup
-Minutos 10-25:  Ejercicio 1 + análisis
-Minutos 25-40:  Ejercicio 2 + análisis
-Minutos 40-55:  Ejercicio 3 + análisis
-Minutos 55-70:  Ejercicio 4 + análisis
-Minutos 70-85:  Ejercicio 5 + análisis
-Minutos 85-90:  Revisión final y documentación
-```
-
----
 
 ## ❓ Preguntas Frecuentes
 
@@ -711,11 +618,9 @@ Antes de entregar, verifica:
 - [ ] Los 5 archivos .py ejecutan sin errores
 - [ ] Todas las tablas de casos de prueba completadas
 - [ ] Todas las preguntas de análisis respondidas
-- [ ] Diagramas de circuitos dibujados
-- [ ] Tabla de integración con compuertas completada
 - [ ] Documento PDF con formato correcto
 - [ ] Capturas de pantalla incluidas
-- [ ] Código comentado y legible
+- [ ] Código legible
 - [ ] Nombre en todos los archivos
 - [ ] Archivo ZIP nombrado correctamente: `Apellido_Nombre_Condicionales.zip`
 
