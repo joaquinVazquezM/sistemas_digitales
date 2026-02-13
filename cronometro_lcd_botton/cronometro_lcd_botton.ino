@@ -1,3 +1,8 @@
+/* CONEXIÓN FÍSICA
+Botón:
+-Una pata del botón al Pin 2 del Mega.
+-La otra pata al GND.
+(Usaremos el modo INPUT_PULLUP para no necesitar una resistencia externa, como se explica en los conceptos avanzados de la Lección 5).*/
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 
@@ -43,3 +48,4 @@ void loop() {
     lcd.print("PAUSADO       "); 
   }
 }
+
